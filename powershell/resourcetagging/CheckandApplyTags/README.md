@@ -1,0 +1,1 @@
+PowerShell script to read the Resource Group level tags and apply to resources.
