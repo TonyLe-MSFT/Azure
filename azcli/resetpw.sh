@@ -1,8 +1,8 @@
 #Example Use keyvault to create the password as a secret and retrieve it. Protects you from storing plaintext passwords in scripts
 #Use the command "az keyvault create --name "Nameofkeyvault" --resource-group "nameofResourceGroup" --location eastus
 
-kv=demovaulttl
-secret=vmrootkey2
+kv=somekeyvaultname
+secret=nameofsecret
 pass="`az keyvault secret show --name $secret --vault-name $kv --query value --output tsv`"
 
 #Set the name of the user you wish to ADD or CHANGE (will ADD if not available)
